@@ -1,11 +1,60 @@
-h1, p {
-    text-align: center;
-}
-li:hover {
-    background-color: aqua;
+div:hover {
     cursor: pointer;
+    padding: 2px 4px 2px 4px;
+    width: 200px;
+    border-radius: 4px;
+    border-style: inset;
+    border-width: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     transition: all 1s ease;
 }
-li:active {
-    font-family: 'Courier New', Courier, monospace;
+div {
+    border-width: 300px;
+    border-style:initial;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: azure ;
+}
+
+div:nth-of-type(1) {
+    background-color: red; width: 200px;
+}
+div:nth-of-type(2) {
+    background-color: blueviolet;width: 200px
+}
+
+div:nth-of-type(3) {
+    background-color: orange;width: 300px;
+    font-size: 30px;
+}
+div:nth-of-type(4) {
+    background-color: darkblue; 
+    
+    width: 200px;
+}
+div:nth-of-type(5) {
+    background-color: aquamarine;
+    width: 200px;
+}
+
+div:nth-child(odd) h3 {
+    font-style: italic
+}
+
+div:nth-of-type(1) > h3 {
+    color: cadetblue;
+}
+div:nth-of-type(2) > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div:nth-of-type(3) > h3 {
+    font-weight: 100;
+}
+div:nth-of-type(4) > h3 {
+    color:aqua
+}
+div:nth-of-type(5) > h3 {
+    color: black
 }
