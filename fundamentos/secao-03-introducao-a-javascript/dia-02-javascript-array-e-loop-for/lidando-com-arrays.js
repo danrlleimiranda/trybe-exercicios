@@ -61,8 +61,56 @@ for (let index = 0; index < arrayNumbers.length; index += 1) {
     console.log(arrayNumbers[index] / 2)
 } */
 
-let fatorial = 1;
+/* let fatorial = 1;
 for (let c = 10; c > 0; c -= 1) {
     fatorial *= c
 } 
-console.log(fatorial)
+console.log(fatorial) */
+
+/*let word = 'tryber';
+let reverseWord = '';
+
+for (let index = 0; index < word.length; index += 1) {
+    reverseWord += word[word.length - 1 - index]
+}
+console.log(reverseWord); */
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let arrayValue = '';
+let biggerWord = '';
+let smallerWord = array[0];
+
+/*for (let index = 0; index < array.length; index += 1) {
+    arrayValue = array[index]
+    for (let secondIndex = 0; secondIndex < arrayValue.length; secondIndex += 1) {
+        if (arrayValue.length > biggerWord.length) {
+           biggerWord = arrayValue
+           
+        }
+    }
+} */
+/*for (let index = 0; index < array.length; index += 1) {
+    arrayValue = array[index]
+    for (let secondIndex = 0; secondIndex < arrayValue.length; secondIndex += 1) {
+        if (arrayValue.length < smallerWord.length) {
+           smallerWord = array[index]
+           
+        }
+    }
+}
+
+console.log(smallerWord) */
+let biggestPrimeNumbers = 0
+
+for (let c = 2; c <= 50; c += 1) {
+    let isPrime = true;
+    for (let divisores = 2; divisores < c; divisores += 1) {
+        if (c % divisores === 0) {
+            isPrime = false;
+        }
+    }
+    if (isPrime) {
+        biggestPrimeNumbers = c;
+    }
+}
+console.log(biggestPrimeNumbers);
