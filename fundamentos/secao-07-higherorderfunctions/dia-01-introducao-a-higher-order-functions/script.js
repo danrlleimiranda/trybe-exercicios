@@ -56,7 +56,7 @@ const people = [
     { name: 'Bruna', age: 19 },
   ];
   
-  verifyAges = (obj, age) => {
+  verifyAges = (obj, age,) => {
     return obj.every((item) => item.age >= age)
   }
   
